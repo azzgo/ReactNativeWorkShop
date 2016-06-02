@@ -5,7 +5,7 @@
 进入项目目录
 
 ```bash
-npm init
+npm install
 ```
 
 启动packager
