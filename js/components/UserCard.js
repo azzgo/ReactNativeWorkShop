@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export default class UserCard extends Component {
+class UserCard extends Component {
   render() {
     return (
       <View style={[styles.card, styles.shadow]}>
@@ -83,4 +83,10 @@ export default class UserCard extends Component {
     )
   }
 }
+
+UserCard.propTypes = {
+  user: React.PropTypes.object.isRequired
+}
+
+export default UserCard
 

@@ -64,4 +64,11 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
+App.propTypes = {
+  fetchAction: React.PropTypes.func.isRequired,
+  filterAction: React.PropTypes.func.isRequired,
+  userlist: React.PropTypes.array.isRequired,
+  filter: React.PropTypes.string.isRequired
+}
+
 export default connect(select, mapDispatchToProps)(App)

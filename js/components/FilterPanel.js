@@ -27,4 +27,8 @@ class FilterPanel extends React.Component {
   }
 }
 
+FilterPanel.propTypes = {
+  action: React.PropTypes.func.isRequired
+}
+
 export default FilterPanel
