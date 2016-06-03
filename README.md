@@ -1,5 +1,9 @@
 # ReactNativeWorkShop
 
+# 准备
+
+参考[Getting Started](https://facebook.github.io/react-native/docs/getting-started.html#content)
+
 # How to Use it
 
 进入项目目录
