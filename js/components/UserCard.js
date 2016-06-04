@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Image, Text } from 'react-native'
+import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native'
 
 const styles = StyleSheet.create({
   name: {
@@ -63,8 +63,12 @@ const styles = StyleSheet.create({
 
 class UserCard extends Component {
   render() {
+    const { navigator } = this.props
     return (
-      <View style={[styles.card, styles.shadow]}>
+      <TouchableOpacity
+        style={[styles.card, styles.shadow]}
+        onPress={() => navigator.push({ page: 'profile' })}
+      >
         <Image
           style={styles.avatar}
           source={{ uri: this.props.user.avatar }}
@@ -79,13 +83,14 @@ class UserCard extends Component {
           <Text style={styles.job}>{this.props.user.title} on {this.props.user.project}</Text>
           <Text style={styles.email}>{this.props.user.email}</Text>
         </View>
-      </View>
+      </TouchableOpacity>
     )
   }
 }
 
 UserCard.propTypes = {
-  user: React.PropTypes.object.isRequired
+  user: React.PropTypes.object.isRequired,
+  navigator: React.PropTypes.object
 }
 
 export default UserCard
