@@ -7,7 +7,6 @@ import React, { Component } from 'react'
 import { View, StatusBar, StyleSheet, ListView } from 'react-native'
 import { connect } from 'react-redux'
 
-import NavBar from '../components/NavBar'
 import UserCard from '../components/UserCard'
 import FilterPanel from '../components/FilterPanel'
 
@@ -39,7 +38,6 @@ class App extends Component {
 
     return (
       <View style={styles.container}>
-        <NavBar />
         <FilterPanel action={filterAction} />
         <ListView
           dataSource={ds}

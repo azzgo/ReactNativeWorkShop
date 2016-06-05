@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
-import NavBar from '../components/NavBar'
 
 const styles = StyleSheet.create({
   backButton: {
@@ -16,7 +15,6 @@ class ProfilePage extends React.Component {
     const { navigator } = this.props
     return (
       <View>
-        <NavBar page="profile" />
         <TouchableOpacity style={styles.backButton} onPress={() => navigator.pop()}>
           <Text>回退</Text>
         </TouchableOpacity>
