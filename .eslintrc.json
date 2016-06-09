@@ -1,5 +1,9 @@
 {
   "extends": "airbnb",
+  "env": {
+      "node": true,
+      "jest": true
+  },
   "rules": {
     "semi": ["warn", "never"],
     "comma-dangle": ["warn", "never"],
