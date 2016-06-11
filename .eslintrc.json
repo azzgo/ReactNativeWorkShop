@@ -2,7 +2,7 @@
   "extends": "airbnb",
   "env": {
       "node": true,
-      "jest": true
+      "mocha": true
   },
   "rules": {
     "semi": ["warn", "never"],
