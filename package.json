@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "mocha --require react-native-mock/mock  --compilers js:babel-core/register --recursive test"
+    "test": "mocha --require react-native-mock/mock  --compilers js:babel-core/register --recursive test",
+    "remotedev": "remotedev --hostname=localhost --port=8000"
   },
   "dependencies": {
     "faker": "^3.1.0",
@@ -14,6 +15,7 @@
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
+    "remote-redux-devtools": "^0.3.3"
   },
   "devDependencies": {
     "babel-polyfill": "^6.9.1",
@@ -30,6 +32,7 @@
     "mocha": "^2.5.3",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-native-mock": "^0.2.3"
+    "react-native-mock": "^0.2.3",
+    "remotedev-server": "^0.1.2"
   }
 }
